@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "description": "description",
+      "technologies": "html, css, javascript"
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "description": " description",
+      "technologies": "html, css, javascript"
+    },
+    {
+      "id": 3,
+      "name": "Project 3",
+      "description": "description",
+      "technologies": "html, css, javascript"
+    },
+    {
+      "id": 4,
+      "name": "Project 4",
+      "description": "description",
+      "technologies": "html, css, javascript"
+    }
+  ]
+}
