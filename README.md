@@ -2,5 +2,5 @@ Wireframe ligger under diagrams sammen med sekvensskjemaene. Det er litt forkjel
 
 <img src="diagrams/Get_diagram.png" alt="Sekvensdiagram for GET" width="400"/> <img src="diagrams/Post_diagram.png" alt="Sekvensdiagram for POST" width="400"/>
 
-<img src="diagrams/wireframe.PNG" alt="Wireframe" width="400"/> <img src="diagrams/ferdig_produkt.PNG" alt="Ferdig produkt" width="400"/>
+![Wireframe](diagrams/wireframe.PNG) ![Ferdig produkt](diagrams/ferdig_produkt.PNG)
 
