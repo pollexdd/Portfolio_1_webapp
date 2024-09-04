@@ -3,4 +3,4 @@ Wireframe ligger under diagrams sammen med sekvensskjemaene. Det er litt forkjel
 ![Sekvensdiagram for GET](diagrams/Get_diagram.png)
 ![Sekvensdiagram for Post](diagrams/Post_diagram.png)
 ![Wireframe](diagrams/wireframe.PNG)
-![Ferdig produkt](diagrams/ferdig_produkt)
+![Ferdig produkt](diagrams/ferdig_produkt.PNG)
