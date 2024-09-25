@@ -1,4 +1,4 @@
-import Experience from './Experience';
+import Experience from './Experience.tsx';
 
 interface ExperienceItem {
     name: string;
@@ -17,7 +17,7 @@ function Experiences({ experiences }: ExperiencesProps) {
         <div>
             {experiences.map((experience, index) => (
                 <Experience key={index} name={experience.name}>
-                    <span>Tilleggsinformasjon om {experience.name}</span>
+                    <span>Mer info om {experience.name}</span>
                 </Experience>
             ))}
         </div>

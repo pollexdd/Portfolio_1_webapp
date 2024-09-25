@@ -16,13 +16,13 @@ export interface Project {
 
 function App() {
     const student = {
-        name: 'Halgeir Geirson',
+        name: 'Herman Fagerlie',
         degree: 'Bachelor IT',
         points: 180,
-        email: 'student@hiof.no',
+        email: 'hermanfa@hiof.no',
         experiences: [
-            { name: 'Figma UI for customer X' },
-            { name: 'Website for customer Y' }
+            { name: 'Figma UI for customer' },
+            { name: 'Website for customer' }
         ]
     };
 

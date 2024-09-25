@@ -10,12 +10,12 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = require("react");
-var Header_1 = require("./components/Header.js");
-var Experiences_1 = require("./components/Experiences.js");
-var Contact_1 = require("./components/Contact.js");
-var Projects_1 = require("./components/Projects.js");
-var CreateProject_1 = require("./components/CreateProject.js");
-var ContactForm_1 = require("./components/ContactForm.js");
+var Header_1 = require("./components/Header.tsx");
+var Experiences_1 = require("./components/Experiences.tsx");
+var Contact_1 = require("./components/Contact.tsx");
+var Projects_1 = require("./components/Projects.tsx");
+var CreateProject_1 = require("./components/CreateProject.tsx");
+var ContactForm_1 = require("./components/ContactForm.tsx");
 function App() {
     // Student-objekt som inneholder alle nødvendige data
     var student = {

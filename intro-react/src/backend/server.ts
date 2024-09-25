@@ -41,3 +41,4 @@ app.delete('/projects/:index', (c) => {
 });
 
 serve(app);
+console.log("backend running!")

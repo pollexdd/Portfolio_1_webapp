@@ -1,1 +1,11 @@
-Wireframe ligger under diagrams sammen med sekvensskjemaene. Det er litt forkjell fra wireframen til det ferdige produktet. Jeg endret til farger jeg likte bedre og endret litt på utsene.
+Start frontend
+```
+cd intro-react
+npm install
+npm run dev
+```
+Start backend
+```
+cd intro-react
+npm run start-server 
+```
