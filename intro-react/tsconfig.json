@@ -5,6 +5,8 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "@types/dayjs"],
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "NodeNext",
@@ -14,6 +16,6 @@
     "outDir": "./dist"
   },
   "include": [
-    "src/backend/server.ts"
+    "src"
   ]
 }
