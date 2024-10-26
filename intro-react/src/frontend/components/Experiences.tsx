@@ -1,4 +1,5 @@
-import Experience from './Experience.tsx';
+// src/frontend/components/Experiences.tsx
+import Experience from './Experience';
 
 interface ExperienceItem {
     name: string;

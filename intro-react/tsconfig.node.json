@@ -7,11 +7,17 @@
 
     "moduleResolution": "Node",
     "isolatedModules": true,
-    "outDir": "./dist/backend",  // Ensure backend files are compiled to a specific folder
+    "outDir": "./dist/backend",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "composite": true
   },
-  "include": ["src/backend/**/*"]  // Focus on backend files
+  "include": [
+    "src/backend/**/*.ts",
+    "src/schemas/**/*.ts",
+    "src/**/*.d.ts"
+  ]
 }

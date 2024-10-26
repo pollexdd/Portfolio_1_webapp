@@ -1,4 +1,3 @@
-// src/types/types.ts
 export interface Project {
     id: string;
     title: string;
@@ -10,15 +9,16 @@ export interface Project {
     tags?: string[];
     public?: boolean;
     demos?: string[];
-    files?: { name: string; url: string }[];
+    files?: {
+        name: string;
+        url: string;
+    }[];
     author?: {
         name: string;
         bio?: string;
         profileLink?: string;
     };
 }
-
-// src/types/types.ts
 export interface ProjectProps {
     id: number;
     title: string;
@@ -27,4 +27,3 @@ export interface ProjectProps {
     publishedAt?: string;
     createdAt?: string;
 }
-

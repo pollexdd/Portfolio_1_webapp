@@ -1,6 +1,5 @@
 // src/schemas/projectSchema.ts
 import { z } from 'zod';
-
 const projectSchema = z.object({
     title: z.string().min(1, 'Title is required'),
     description: z.string().min(1, 'Description is required'),
@@ -20,5 +19,4 @@ const projectSchema = z.object({
         profileLink: z.string().url().optional(),
     }).optional(),
 });
-
-export default projectSchema;
+export default projectSchema; // Use default export

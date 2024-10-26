@@ -5,18 +5,20 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
+    "composite": true,
     "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
     "jsx": "react-jsx",
-
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/frontend/**/*"]  // Specify that it should focus on frontend files
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
 }

@@ -5,24 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d91abee-a8bb-4e11-bc0f-d5786aaafd8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/intro-react/src/config/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/frontend/hooks/useProjects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/frontend/services/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/types/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro-react/src/utils/dateUtils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro-react/src/vite.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/backend/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/backend/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/CreateProject.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/CreateProject.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/services/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/utils/dateUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/utils/dateUtils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/tsconfig.app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/tsconfig.node.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/tsconfig.node.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,30 +76,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.index.html.executor": "Run",
-    "Node.js.fetchProjects.ts.executor": "Run",
-    "Node.js.server.js.executor": "Run",
-    "Node.js.server.ts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Portfolio-2",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/polle/Documents/GitHub/Portfolio_1_webapp",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Settings.JavaScript",
-    "ts.external.directory.path": "C:\\Users\\polle\\OneDrive\\Documents\\github\\Portfolio_1_webapp\\intro-react\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.fetchProjects.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.server.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.server.ts.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Portfolio-3&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/polle/Documents/GitHub/Portfolio_1_webapp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\polle\\Documents\\GitHub\\Portfolio_1_webapp\\intro-react\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\polle\Documents\GitHub\Portfolio_1_webapp" />
@@ -110,8 +115,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
       </set>
     </attachedChunks>
   </component>
@@ -141,6 +146,16 @@
       <workItem from="1727278650940" duration="575000" />
       <workItem from="1727279360392" duration="342000" />
       <workItem from="1729332890645" duration="7752000" />
+      <workItem from="1729797654467" duration="2347000" />
+      <workItem from="1729800098904" duration="163000" />
+      <workItem from="1729851279543" duration="3409000" />
+      <workItem from="1729859958570" duration="6411000" />
+      <workItem from="1729868115167" duration="1609000" />
+      <workItem from="1729882959842" duration="1000" />
+      <workItem from="1729882970330" duration="2355000" />
+      <workItem from="1729885447096" duration="2505000" />
+      <workItem from="1729890675314" duration="178000" />
+      <workItem from="1729945022223" duration="1378000" />
     </task>
     <servers />
   </component>
@@ -152,6 +167,46 @@
         <option value="$PROJECT_DIR$/my-app/public/src/index.js" />
         <option value="$PROJECT_DIR$/my-app/public/scripts/createProject.js" />
         <option value="$PROJECT_DIR$/my-app/public/scripts/fetchProjects.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/utils/dateUtils.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/types/types.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/config/config.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/hooks/useProjects.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/services/api.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Footer.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Project.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Header.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Contact.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Experience.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/CreateProject.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/ContactForm.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/App.js" />
+        <option value="$PROJECT_DIR$/intro-react/src/types/types.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/utils/dateUtils.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/backend/server.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/App.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/main.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/hooks/useProjects.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/ContactForm.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Contact.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Project.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Header.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Footer.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/Experience.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/components/CreateProject.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/frontend/services/api.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/config/config.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/vite.config.d.ts" />
+        <option value="$PROJECT_DIR$/intro-react/src/vite.config.js" />
       </list>
     </option>
   </component>

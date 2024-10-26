@@ -1,3 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 // src/frontend/App.tsx
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
@@ -6,9 +7,7 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import CreateProject from './components/CreateProject';
 import ContactForm from './components/ContactForm';
-import { Project } from '../types/types';
 import { getProjects } from './services/api';
-
 function App() {
     const student = {
         name: 'Herman Fagerlie',
@@ -20,23 +19,20 @@ function App() {
             { name: 'Website for customer' }
         ]
     };
-
-    const [projects, setProjects] = useState<Project[]>([]);
-
+    const [projects, setProjects] = useState([]);
     useEffect(() => {
         const fetchProjects = async () => {
             try {
                 const fetchedProjects = await getProjects();
                 setProjects(fetchedProjects);
-            } catch (error) {
+            }
+            catch (error) {
                 console.error('Error fetching projects:', error);
             }
         };
-
         fetchProjects();
     }, []);
-
-    const addProject = (newProject: Omit<Project, 'id' | 'createdAt'>) => {
+    const addProject = (newProject) => {
         const newProjectWithId = {
             ...newProject,
             id: (projects.length + 1).toString(),
@@ -44,21 +40,9 @@ function App() {
         };
         setProjects([...projects, newProjectWithId]);
     };
-
-    const removeProject = (id: string) => {
+    const removeProject = (id) => {
         setProjects(projects.filter((project) => project.id !== id));
     };
-
-    return (
-        <div>
-            <Header student={student.name} degree={student.degree} points={student.points} />
-            <Experiences experiences={student.experiences} />
-            <Contact email={student.email} />
-            <ContactForm />
-            <Projects projects={projects} removeProject={removeProject} />
-            <CreateProject addProject={addProject} />
-        </div>
-    );
+    return (_jsxs("div", { children: [_jsx(Header, { student: student.name, degree: student.degree, points: student.points }), _jsx(Experiences, { experiences: student.experiences }), _jsx(Contact, { email: student.email }), _jsx(ContactForm, {}), _jsx(Projects, { projects: projects, removeProject: removeProject }), _jsx(CreateProject, { addProject: addProject })] }));
 }
-
-export default App;
+export default App; // Ensure this line is present at the end

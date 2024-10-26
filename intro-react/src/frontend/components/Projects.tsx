@@ -1,35 +1,28 @@
-interface ProjectProps {
-    id: number;
-    title: string;
-    description: string;
-    createdAt: string;
-    category: string;
+// src/components/Projects.tsx
+import React from 'react';
+import ProjectComponent from './Project';
+import { Project } from '../../types/types';
+
+interface ProjectsProps {
+    projects: Project[];
+    removeProject: (id: string) => void;
 }
 
-interface ProjectsComponentProps {
-    projects: ProjectProps[];
-    removeProject: (index: number) => void;
-}
-
-function Projects({ projects, removeProject }: ProjectsComponentProps) {
-    if (projects.length === 0) {
-        return <p>No projects available</p>;
+const Projects: React.FC<ProjectsProps> = ({ projects, removeProject }) => {
+    if (!projects || projects.length === 0) {
+        return <p>No projects available.</p>;
     }
 
     return (
         <div>
-            <p>Total Projects: {projects.length}</p>
-            {projects.map((project, index) => (
+            {projects.map((project) => (
                 <div key={project.id}>
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    <p>Created At: {new Date(project.createdAt).toLocaleDateString()}</p>
-                    <p>Category: {project.category}</p>
-                    <button onClick={() => removeProject(index)}>Remove Project</button>
+                    <ProjectComponent project={project} />
+                    <button onClick={() => removeProject(project.id)}>Remove</button> {/* Use ID */}
                 </div>
             ))}
         </div>
     );
-}
+};
 
 export default Projects;
