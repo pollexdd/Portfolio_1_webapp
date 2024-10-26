@@ -1,16 +1,17 @@
-// Experience.tsx
+import React from 'react';
+
 interface ExperienceProps {
     name: string;
     children?: React.ReactNode;
 }
 
-function Experience({ name, children }: ExperienceProps) {
+const Experience: React.FC<ExperienceProps> = ({ name, children }) => {
     return (
-        <div>
-            <p>{name}</p>
-            {children && <div>{children}</div>} {}
+        <div className="experience-container">
+            <p className="experience-name">{name}</p>
+            {children && <div className="experience-details">{children}</div>}
         </div>
     );
-}
+};
 
 export default Experience;

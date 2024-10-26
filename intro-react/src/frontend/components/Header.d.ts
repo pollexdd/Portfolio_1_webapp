@@ -1,7 +1,8 @@
+import React from 'react';
 interface HeaderProps {
     student: string;
     degree: string;
     points: number;
 }
-declare function Header({ student, degree, points }: HeaderProps): import("react/jsx-runtime").JSX.Element;
+declare const Header: React.FC<HeaderProps>;
 export default Header;

@@ -1,37 +1,34 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-function ContactForm() {
+const ContactForm: React.FC = () => {
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (!name.trim() || !message.trim()) {
-            alert('Vennligst fyll ut alle feltene.');
-            return;
-        }
-        const formData = { name, message };
-        alert(JSON.stringify(formData, null, 2));
-        setName('');
-        setMessage('');
+        alert(`Message sent from ${name}: ${message}`);
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Navn</label>
+        <form className="contact-form" onSubmit={handleSubmit}>
+            <label className="form-label">Name</label>
             <input
+                className="form-input"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
-            <label>Melding</label>
+            <label className="form-label">Message</label>
             <textarea
+                className="form-textarea"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button type="submit">Send melding</button>
+            <button className="form-submit" type="submit">
+                Send
+            </button>
         </form>
     );
-}
+};
 
 export default ContactForm;

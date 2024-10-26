@@ -1,7 +1,7 @@
 import React from 'react';
-import { Project } from '../../types/types';
+import { Project as ProjectType } from '../../types/types';
 interface ProjectsProps {
-    projects: Project[];
+    projects: ProjectType[];
     removeProject: (id: string) => void;
 }
 declare const Projects: React.FC<ProjectsProps>;

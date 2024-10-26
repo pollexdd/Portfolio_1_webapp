@@ -1,19 +1,22 @@
-// components/Contact.tsx
+import React from 'react';
+
 interface ContactProps {
     email: string;
 }
 
-function Contact({ email }: ContactProps) {
+const Contact: React.FC<ContactProps> = ({ email }) => {
     const handleClick = () => {
-        alert(`E-post til studenten: ${email}`);
+        alert(`Email: ${email}`);
     };
 
     return (
-        <div>
-            <p>{email}</p>
-            <button onClick={handleClick}>Vis E-post</button>
+        <div className="contact-container">
+            <p className="contact-email">{email}</p>
+            <button className="contact-button" onClick={handleClick}>
+                Show Email
+            </button>
         </div>
     );
-}
+};
 
 export default Contact;

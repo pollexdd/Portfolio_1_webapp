@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { z } from 'zod';
 import { Project } from '../../types/types'; // Import the Project type
 
-// Define the schema for validation
 const projectSchema = z.object({
     title: z.string().min(1, 'Title is required'),
     description: z.string().min(1, 'Description is required'),
@@ -63,7 +62,6 @@ function CreateProject({ addProject }: CreateProjectProps) {
         };
 
         try {
-            // Validate data with Zod schema
             projectSchema.parse(projectData);
             addProject(projectData as Project);
         } catch (error) {
@@ -72,55 +70,57 @@ function CreateProject({ addProject }: CreateProjectProps) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Project Name</label>
-            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <form onSubmit={handleSubmit} className="create-project-form">
+            <label className="create-project-label">Project Name</label>
+            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="create-project-input" />
 
-            <label>Description</label>
-            <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
+            <label className="create-project-label">Description</label>
+            <textarea value={description} onChange={(e) => setDescription(e.target.value)} className="create-project-textarea" />
 
-            <label>Category</label>
-            <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} />
+            <label className="create-project-label">Category</label>
+            <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} className="create-project-input" />
 
-            <label>Status</label>
-            <select value={status} onChange={(e) => setStatus(e.target.value as 'In Progress' | 'Completed')}>
+            <label className="create-project-label">Status</label>
+            <select value={status} onChange={(e) => setStatus(e.target.value as 'In Progress' | 'Completed')} className="create-project-select">
                 <option value="In Progress">In Progress</option>
                 <option value="Completed">Completed</option>
             </select>
 
-            <label>Tags</label>
-            <input type="text" placeholder="Comma-separated tags" onChange={(e) => setTags(e.target.value.split(','))} />
+            <label className="create-project-label">Tags</label>
+            <input type="text" placeholder="Comma-separated tags" onChange={(e) => setTags(e.target.value.split(','))} className="create-project-input" />
 
-            <label>Public</label>
-            <input type="checkbox" checked={isPublic} onChange={() => setIsPublic(!isPublic)} />
+            <label className="create-project-label">Public</label>
+            <input type="checkbox" checked={isPublic} onChange={() => setIsPublic(!isPublic)} className="create-project-checkbox" />
 
-            <label>Link</label>
-            <input type="url" value={link} onChange={(e) => setLink(e.target.value)} />
+            <label className="create-project-label">Link</label>
+            <input type="url" value={link} onChange={(e) => setLink(e.target.value)} className="create-project-input" />
 
-            <label>Demos</label>
-            <input type="url" placeholder="Add a demo URL" onBlur={(e) => e.target.value && setDemos([...demos, e.target.value])} />
+            <label className="create-project-label">Demos</label>
+            <input type="url" placeholder="Add a demo URL" onBlur={(e) => e.target.value && setDemos([...demos, e.target.value])} className="create-project-input" />
 
-            <label>Files</label>
+            <label className="create-project-label">Files</label>
             <input
                 type="text"
                 placeholder="File name"
                 onBlur={(e) => e.target.value && setFiles([...files, { name: e.target.value, url: '' }])}
+                className="create-project-input"
             />
             <input
                 type="url"
                 placeholder="File URL"
                 onBlur={(e) => e.target.value && setFiles(files.map((file, i) => (i === files.length - 1 ? { ...file, url: e.target.value } : file)))}
+                className="create-project-input"
             />
 
-            <h3>Author</h3>
-            <label>Name</label>
-            <input type="text" value={authorName} onChange={(e) => setAuthorName(e.target.value)} />
-            <label>Bio</label>
-            <input type="text" value={authorBio} onChange={(e) => setAuthorBio(e.target.value)} />
-            <label>Profile Link</label>
-            <input type="url" value={authorProfileLink} onChange={(e) => setAuthorProfileLink(e.target.value)} />
+            <h3 className="create-project-author-title">Author</h3>
+            <label className="create-project-label">Name</label>
+            <input type="text" value={authorName} onChange={(e) => setAuthorName(e.target.value)} className="create-project-input" />
+            <label className="create-project-label">Bio</label>
+            <input type="text" value={authorBio} onChange={(e) => setAuthorBio(e.target.value)} className="create-project-input" />
+            <label className="create-project-label">Profile Link</label>
+            <input type="url" value={authorProfileLink} onChange={(e) => setAuthorProfileLink(e.target.value)} className="create-project-input" />
 
-            <button type="submit">Add Project</button>
+            <button type="submit" className="create-project-submit">Add Project</button>
         </form>
     );
 }

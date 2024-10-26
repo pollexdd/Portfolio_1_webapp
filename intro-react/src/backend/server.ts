@@ -57,11 +57,23 @@ let projects: Project[] = [
 
 const app = new Hono<CustomEnv>();
 
-app.use('*', cors());
+app.use('*', cors({
+    origin: 'http://localhost:5173',
+    credentials: true
+}));
+
+const parseCookies = (cookie: string | undefined) => {
+    if (!cookie) return {};
+    return Object.fromEntries(cookie.split(';').map(c => c.trim().split('=')));
+};
 
 app.use('/projects', async (c, next) => {
-    const cookie = c.req.header('cookie');
-    const isAdmin = cookie?.includes('user.role=admin') ?? false;
+    const cookieHeader = c.req.header('cookie');
+    const cookies = parseCookies(cookieHeader);
+    const isAdmin = cookies['user.role'] === 'admin';
+    console.log('Received Cookie:', cookieHeader);
+    console.log('Parsed Cookies:', cookies);
+    console.log('Is Admin:', isAdmin);
     c.env.isAdmin = isAdmin;
     await next();
 });

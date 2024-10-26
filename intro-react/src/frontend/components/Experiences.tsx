@@ -1,28 +1,24 @@
-// src/frontend/components/Experiences.tsx
+import React from 'react';
 import Experience from './Experience';
 
-interface ExperienceItem {
-    name: string;
-}
-
 interface ExperiencesProps {
-    experiences: ExperienceItem[];
+    experiences: { name: string; details: string }[];
 }
 
-function Experiences({ experiences }: ExperiencesProps) {
-    if (experiences.length === 0) {
-        return <p>Ingen erfaringer</p>;
-    }
-
+const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
     return (
-        <div>
-            {experiences.map((experience, index) => (
-                <Experience key={index} name={experience.name}>
-                    <span>Mer info om {experience.name}</span>
-                </Experience>
-            ))}
+        <div className="experiences-container">
+            {experiences.length === 0 ? (
+                <p className="no-experiences">No experiences listed.</p>
+            ) : (
+                experiences.map((experience, index) => (
+                    <Experience key={index} name={experience.name}>
+                        <span>{experience.details}</span>
+                    </Experience>
+                ))
+            )}
         </div>
     );
-}
+};
 
 export default Experiences;

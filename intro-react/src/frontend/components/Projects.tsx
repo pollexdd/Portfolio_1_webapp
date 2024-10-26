@@ -1,26 +1,27 @@
-// src/components/Projects.tsx
 import React from 'react';
+import { Project as ProjectType } from '../../types/types';
 import ProjectComponent from './Project';
-import { Project } from '../../types/types';
 
 interface ProjectsProps {
-    projects: Project[];
+    projects: ProjectType[];
     removeProject: (id: string) => void;
 }
 
 const Projects: React.FC<ProjectsProps> = ({ projects, removeProject }) => {
-    if (!projects || projects.length === 0) {
-        return <p>No projects available.</p>;
-    }
-
     return (
-        <div>
-            {projects.map((project) => (
-                <div key={project.id}>
-                    <ProjectComponent project={project} />
-                    <button onClick={() => removeProject(project.id)}>Remove</button> {/* Use ID */}
-                </div>
-            ))}
+        <div className="projects-container">
+            {projects.length === 0 ? (
+                <p className="no-projects">No projects available.</p>
+            ) : (
+                projects.map((project) => (
+                    <div key={project.id} className="project-item">
+                        <ProjectComponent project={project} />
+                        <button className="remove-project-button" onClick={() => removeProject(project.id)}>
+                            Remove
+                        </button>
+                    </div>
+                ))
+            )}
         </div>
     );
 };

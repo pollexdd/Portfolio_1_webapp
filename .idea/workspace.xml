@@ -5,29 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d91abee-a8bb-4e11-bc0f-d5786aaafd8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/intro-react/src/vite.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/src/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/backend/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/backend/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/App.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/App.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/Pages/PortfolioPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Contact.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Contact.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/ContactForm.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/ContactForm.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/ContactForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/CreateProject.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/CreateProject.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Experience.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Experience.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Experience.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Experiences.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Header.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Header.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Project.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Project.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/components/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/services/api.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/services/api.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-react/src/frontend/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/frontend/services/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/types/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/src/utils/dateUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/utils/dateUtils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/tsconfig.node.json" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/tsconfig.node.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro-react/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/intro-react/src/schemas/projectSchema.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +51,13 @@
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
     </option>
   </component>
   <component name="Git.Settings">
@@ -155,7 +171,11 @@
       <workItem from="1729882970330" duration="2355000" />
       <workItem from="1729885447096" duration="2505000" />
       <workItem from="1729890675314" duration="178000" />
-      <workItem from="1729945022223" duration="1378000" />
+      <workItem from="1729945022223" duration="4171000" />
+      <workItem from="1729959616256" duration="1438000" />
+      <workItem from="1729974336264" duration="31000" />
+      <workItem from="1729982498227" duration="8000" />
+      <workItem from="1729982516846" duration="2468000" />
     </task>
     <servers />
   </component>

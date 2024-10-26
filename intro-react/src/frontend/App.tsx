@@ -8,6 +8,7 @@ import CreateProject from './components/CreateProject';
 import ContactForm from './components/ContactForm';
 import { Project } from '../types/types';
 import { getProjects } from './services/api';
+import './index.css';
 
 function App() {
     const student = {
@@ -16,8 +17,8 @@ function App() {
         points: 180,
         email: 'hermanfa@hiof.no',
         experiences: [
-            { name: 'Figma UI for customer' },
-            { name: 'Website for customer' }
+            { name: 'Figma UI for customer', details: 'Design and user interface' },
+            { name: 'Website for customer', details: 'Frontend and backend development' }
         ]
     };
 
@@ -27,6 +28,7 @@ function App() {
         const fetchProjects = async () => {
             try {
                 const fetchedProjects = await getProjects();
+                console.log('Fetched Projects:', fetchedProjects);  // Log fetched projects
                 setProjects(fetchedProjects);
             } catch (error) {
                 console.error('Error fetching projects:', error);

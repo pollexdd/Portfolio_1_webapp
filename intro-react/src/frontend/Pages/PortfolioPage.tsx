@@ -1,23 +1,38 @@
-// src/pages/PortfolioPage.tsx
-import React from 'react';
-import Layout from '../components/Layout';  // Import Layout
+import { useEffect, useState } from 'react';
 import Projects from '../components/Projects';
+import { getProjects, deleteProject } from '../services/api'; // assuming deleteProject exists in api.ts
+import { Project } from '../../types/types';
 
-const sampleProjects = [
-    { id: '1', title: 'Project 1', description: 'Description 1', category: 'Web', publishedAt: '2024-10-19', createdAt: '2024-09-01' },
-    { id: '2', title: 'Project 2', description: 'Description 2', category: 'Mobile', publishedAt: '2024-10-20', createdAt: '2024-09-02' }
-];
+const PortfolioPage = () => {
+    const [projects, setProjects] = useState<Project[]>([]);
 
-const removeProject = (id: string) => {
-    console.log(`Remove project with id: ${id}`);
-};
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                const projectsFromServer = await getProjects();
+                setProjects(projectsFromServer);
+            } catch (error) {
+                console.error('Error loading projects:', error);
+            }
+        };
 
-const PortfolioPage: React.FC = () => {
+        fetchProjects();
+    }, []);
+
+    const removeProject = async (projectId: string) => {
+        try {
+            await deleteProject(projectId); // Calls the API to delete the project
+            setProjects((prevProjects) => prevProjects.filter(project => project.id !== projectId));
+        } catch (error) {
+            console.error('Error removing project:', error);
+        }
+    };
+
     return (
-        <Layout>
+        <div>
             <h1>My Portfolio</h1>
-            <Projects projects={sampleProjects} removeProject={removeProject} />  {}
-        </Layout>
+            <Projects projects={projects} removeProject={removeProject} /> {/* Pass removeProject */}
+        </div>
     );
 };
 

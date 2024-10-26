@@ -1,5 +1,6 @@
+import React from 'react';
 interface ContactProps {
     email: string;
 }
-declare function Contact({ email }: ContactProps): import("react/jsx-runtime").JSX.Element;
+declare const Contact: React.FC<ContactProps>;
 export default Contact;

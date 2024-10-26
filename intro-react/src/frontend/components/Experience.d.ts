@@ -1,6 +1,7 @@
+import React from 'react';
 interface ExperienceProps {
     name: string;
     children?: React.ReactNode;
 }
-declare function Experience({ name, children }: ExperienceProps): import("react/jsx-runtime").JSX.Element;
+declare const Experience: React.FC<ExperienceProps>;
 export default Experience;

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer: React.FC = () => {
     return (
-        <footer>
-            <p>&copy; 2024 My Portfolio</p>
+        <footer className="footer-container">
+            <p className="footer-text">&copy; 2024 My Portfolio</p>
         </footer>
     );
 };

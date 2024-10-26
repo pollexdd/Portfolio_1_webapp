@@ -1,17 +1,20 @@
-// components/Header.tsx
+import React from 'react';
+
 interface HeaderProps {
     student: string;
     degree: string;
     points: number;
 }
 
-function Header({ student, degree, points }: HeaderProps) {
+const Header: React.FC<HeaderProps> = ({ student, degree, points }) => {
     return (
-        <div>
-            <h1>{student}</h1>
-            <p>{degree} {points} studiepoeng</p>
-        </div>
+        <header className="header-container">
+            <h1 className="header-title">{student}</h1>
+            <p className="header-info">
+                {degree} - {points} credits
+            </p>
+        </header>
     );
-}
+};
 
 export default Header;

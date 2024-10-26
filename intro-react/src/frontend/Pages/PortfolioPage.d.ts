@@ -1,3 +1,2 @@
-import React from 'react';
-declare const PortfolioPage: React.FC;
+declare const PortfolioPage: () => import("react/jsx-runtime").JSX.Element;
 export default PortfolioPage;

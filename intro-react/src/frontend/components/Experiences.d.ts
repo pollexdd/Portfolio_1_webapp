@@ -1,8 +1,9 @@
-interface ExperienceItem {
-    name: string;
-}
+import React from 'react';
 interface ExperiencesProps {
-    experiences: ExperienceItem[];
+    experiences: {
+        name: string;
+        details: string;
+    }[];
 }
-declare function Experiences({ experiences }: ExperiencesProps): import("react/jsx-runtime").JSX.Element;
+declare const Experiences: React.FC<ExperiencesProps>;
 export default Experiences;
